@@ -1,0 +1,22 @@
+---
+    import Header from "./components/Header.astro";
+    import Footer from "./components/Footer.astro";
+    import BaseHead from "./components/BaseHead.astro";
+
+    import "./GlobalLayout.css"
+---
+
+
+<!doctype html>
+<html>
+    <head>
+        <BaseHead></BaseHead>
+    </head>
+    <body>
+        <Header></Header>
+        <main>
+            <slot></slot>
+        </main>
+        <Footer></Footer>
+    </body>
+</html>
