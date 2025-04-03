@@ -3,7 +3,7 @@
     import Footer from "./components/Footer.astro";
     import BaseHead from "./components/BaseHead.astro";
 
-    import "./GlobalLayout.css"
+    import "./GlobalLayout.less"
 ---
 
 
@@ -14,7 +14,7 @@
     </head>
     <body>
         <Header></Header>
-        <main>
+        <main style="max-width: 100vw; overflow-x:hidden;">
             <slot></slot>
         </main>
         <Footer></Footer>

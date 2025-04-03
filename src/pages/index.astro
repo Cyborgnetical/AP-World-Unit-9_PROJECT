@@ -4,6 +4,104 @@ import GlobalLayout from "../layouts/GlobalLayout.astro"
 ---
 
 <GlobalLayout>
-	<h1>Globalization</h1>
+	<div id="main-thing">
+		<video autoplay muted loop>
+			<source src="/videos/Earth_Spin.mp4" type="video/mp4" >
+		</video>
+		<div class="split-text-container" style="height:100px;">
+			<span class="text-part left">GLOBAL</span>
+			<span class="text-part right">IZATION</span>
+		</div>
+		<p style="font-size:14px" class="melting-text">By: Jose Ibarra-Martinez</p>
+	</div>
+	<div style="margin-left:5vw; color:rgb(0, 255, 136);">
+		|  *Recommended to open on wide screen (Computer)<br>
+		|  *Home Page Button will redirect to my personal website. No idea how to fix. ¯\_(ツ)_/¯
+	</div>
+	<article>
+		<h1>What is Globalization?</h1>
+		<section>
+			<div>
+				Globalization is the world becoming more conected
+				<ul>
+					<li>Economic</li>
+					<li>Politically</li>
+					<li>Socially</li>
+				</ul>
+				in which these factors of one country affects all other countries. Each building up reliance on each other to maintain themselves. This also allowing the rapid spread of ideas and culture from one country or reigon to the rest of the world
+			</div>
+			<img src="/images/connected_globe.jpg">
+		</section>
+		<h1 style="text-align: right;">Effects of Globalization</h1>
+		<section>
+			<div>
+				You yourself are currently living the effects about globalization. Yes you the one reading this website held together by duct tape and zipties. <br> 
+				<h2>Spread of Information</h2>
+				This could count as the spreading of information as its availible to the entire world, all that you need is a computer and a internet connect. I someone from South Africa or Mexico can see this site. 
+				<h2>Spread of Culture</h2> 
+				Look at the music that you or I currently listen too. Possibly K-Pop or rock, these don't originate from the country you are visting from do they? (Unless you are from south korea for K-Pop or USA for rock, most likey).
+				<ul>
+					<li> <a href="https://youtu.be/f7T55UixV-o?si=WzNkPXqTUPQSEdfl&t=72">K-Pop</a> Originating from South Korea (Why Heimler)</li>
+					<li> <a href="https://www.youtube.com/channel/UCjQhd1APsd5NQhiVZV7GYzg">Sabaton</a> Originating from Sweden</li>
+				</ul>
+				(You can also partially blame youtube for the spread)
+				<h2>Global Economy</h2>
+				Hey so you know how everything is made in china, taiwan or costa rica for some reason? Thats global economics. We buy or build factories in forgein countries and import it back for us to use. Even look at walmart, amazon, or ebay even, they all ship world wide and have products from around the world. If I wanted to I could buy a clock from the UK or wine from france or a toy from mexico.
+			</div>
+		</section>
+	</article>
+	<h1 style="text-align: center;">So whats next?</h1>
+	<p style="text-align: center;">Move on and explore the website. Most likely, go explore the <a href="/Cultural-Globalization">Culture</a> section</p>
+
+	
 </GlobalLayout>
 
+<style lang="less">
+	article{
+		padding-inline: 5vw;
+		section{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			padding:15px;
+			border-radius: 5px;
+			border:1px rgb(44, 44, 44) solid;
+
+			transition: 550ms;
+			&:hover{
+				box-shadow: 0 0 5px 5px #009EDB;
+			}
+
+			margin-bottom:10px;
+
+			background-color: rgb(20, 20, 20);
+
+			font-family: Atkinson;
+
+			align-items: center;
+			justify-content: center;
+			div{
+				margin-right:25px;
+			}
+			ul{
+				list-style-type: circle;
+				li::before{
+					content: " - "
+				}
+			}
+			img{
+				width:90%;
+				border:1px white solid;
+
+				border-radius: 15px;
+			}
+
+		}
+	}
+</style>
+
+<style>
+
+
+
+
+</style>

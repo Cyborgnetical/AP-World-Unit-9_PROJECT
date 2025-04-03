@@ -1,23 +1,119 @@
-<header>
-    <h1>APWH Unit 9 | Globalization</h1>
+<header class="frosted-glass">
+    <h1>🇺🇳 APWH Unit 9 | Globalization 🇺🇳</h1>
     <nav>
-        <a>Culture</a>
-        <a>Economy</a>
-        <a>Technology</a>
+        <a href="/"> | Home |</a>
+        <a> 🍕 Culture 🎵</a>
+        <a> 💲 Economy 💲 </a>
+        <a>🖥️ Technology 📠</a>
+        <a>✊ Challenges 💥</a>
+        <a>❔ Reactions 💭</a>
+        <a>- Conclusion -</a>
+
     </nav>
 </header>
+<div style="height:10vh;">
+		
+</div>
 
-<style>
+<style lang="less">
 
     header{
+        position:fixed;
+        z-index: 9999999;
+
         border: 1px solid black;
         font-family: "Open Sans";
 
         width:100vw;
 
-        display: grid;
+        display:grid;
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        /* From https://css.glass */
+        background: rgba(0, 33, 143, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        h1{
+            border-bottom: 2px solid white;
+            color:white;
+            
+        }
+
+        nav{
+            
+            width:75vw;
+
+            display:flex;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content:space-evenly;
+
+            a{
+                text-decoration: none;
+                position: relative;
+                color: black;
+                width: 140px;
+                height:40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 2px solid rgba(178, 248, 248, 0.29);
+                box-sizing: border-box;
+                font-family: "Open Sans";
+                background-color: rgba(245, 245, 245, 0.367);
+                transition: 350ms;
+                z-index: 0;
+
+            }
+            a:hover{
+                color: white;
+            }
+            a::before{
+                content: "";
+                position: absolute;
+
+                top:0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+
+                background-color: #009EDB;
+                transition: 500ms;
+
+                z-index: -1;
+            }
+            a::after{
+                content: "";
+                position: absolute;
+
+                top:0;
+                right: 0;
+                width: 0%;
+                height: 100%;
+
+                background-color: #009EDB;
+                transition: 500ms;
+                z-index: -1;
+            }
+            a:hover::before{
+                width: 60%;
+                left: -9%;
+                height: 100%;
+                transform: skewX(25deg);
+            }
+            a:hover::after{
+                width: 60%;
+                right: -9%;
+                height: 100%;
+                transform: skewX(-25deg);
+            }
+            
+        }
     }
 </style>
