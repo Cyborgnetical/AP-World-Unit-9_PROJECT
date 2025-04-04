@@ -6,7 +6,7 @@ import GlobalLayout from "../layouts/GlobalLayout.astro"
 <GlobalLayout>
 	<div id="main-thing">
 		<video autoplay muted loop>
-			<source src="/videos/Earth_Spin.mp4" type="video/mp4" >
+			<source src=`${import.meta.env.BASE_URL}/videos/Earth_Spin.mp4` type="video/mp4" >
 		</video>
 		<div class="split-text-container" style="height:100px;">
 			<span class="text-part left">GLOBAL</span>
@@ -30,7 +30,7 @@ import GlobalLayout from "../layouts/GlobalLayout.astro"
 				</ul>
 				in which these factors of one country affects all other countries. Each building up reliance on each other to maintain themselves. This also allowing the rapid spread of ideas and culture from one country or reigon to the rest of the world
 			</div>
-			<img src="/images/connected_globe.jpg">
+			<img src=`${import.meta.env.BASE_URL}/images/connected_globe.jpg`>
 		</section>
 		<h1 style="text-align: right;">Effects of Globalization</h1>
 		<section>
